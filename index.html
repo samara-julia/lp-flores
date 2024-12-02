@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="nav-bar">
+            <ul>
+                <li><a href="#inicio">inicio</li></a>
+                <li><a href="#beleza">flores & significados</li></a>
+                <li><a href="#clientes"> depoimentos</li></a>
+                <li><a href="#footer"> contato</li></a>
+            </ul>
+        </div>
+            <div id="menuzinho">
+            <button onclick="showMenu()"><img class="icon" src="assets/icons8-menu-50.png" style="width: 30px; height: 30px;"></button>
+        </div>
+        </nav>
+        
+        <div class="menu-mobile">
+            <ul>
+                <li><a href="#inicio">inicio</li></a>
+                <li><a href="#beleza">flores & significados</li></a>
+                <li><a href="#clientes"> depoimentos</li></a>
+                <li><a href="#footer"> contato</li></a>
+            </ul>
+        </div>
+    </header>
+    <!-- inicio primeira seção ♡-->
+    <section id="inicio">
+        <div id="inicio-div">
+            <h1>Flores Que Inspiram</h1>
+            <sub>Descubra a magia e a suavidade de cada flor. <br> Explore nosso jardim!</sub>
+        </div>
+        <button id="primeiro-botao">VER COLEÇÃO</button>
+
+        <div id="bolinhas">
+
+        </div>
+    </section>
+    <!-- fim da primeira seção ♡-->
+
+    <!-- inicio segunda seção ♡-->
+    <section id="beleza">
+        <h2>A Beleza e os significados das Flores</h2>
+        <p>Cada flor carrega uma mensagem especial, do <span style="color: #ac8a88;">amor à serenidade.</span>
+            Conheça o simbolismo por trás de cada espécie e como elas podem <strong>transformar seu ambiente</strong>
+        </p>
+        <div class="fotinhas">
+            <img class="fotos-maiores" id="foto1" src="assets/image 7.png" alt="">
+            <img class="fotos-menores" id="foto2" src="assets/image 4.png" alt="">
+            <img class="fotos-maiores" id="foto3" src="assets/image 8.png" alt="">
+            <img class="fotos-menores" id="foto4" src="assets/image 5.png" alt="">
+        </div>
+    </section>
+    <!-- fim da segunda seção ♡-->
+
+    <!-- inicio terceira seção ♡-->
+    <section id="sec3">
+        <div id="florzinhas">
+        <img class="icon-florzinha" src="assets/icons8-flower-50 28.png" alt="icone de flor">
+        <img class="icon-florzinha" src="assets/icons8-flower-50 28.png" alt="icone de flor">
+        </div>
+        <h2>Por que ter flores em sua vida?</h2>
+        <ul>
+            <li>Acalmam a mente</li>
+            <li>Embelezam ambientes</li>
+            <li>Criam um ambiente acolhedor e agradável</li>
+        </ul>
+    </section>
+    <!-- fim da terceira seção ♡-->
+
+    <!-- inicio quarta seção ♡-->
+    <section id="contato">
+        
+            <h3>Quer saber mais? Mande uma mensagem no <strong>whatsapp!</strong></h3>
+            <form action="">
+                <label for="nome">nome</label><input type="text" name="nome" id="nome">
+                <label for="email">email</label><input type="text" name="email" id="email">
+                <button id="segundo-botao">FALE COM UMA DE NÓS</button>
+            </form>
+        
+    </section>
+    <!-- fim da quarta seção ♡-->
+
+    <!-- inicio quinta seção ♡-->
+    <section id="clientes">
+        <h2>O que <strong>nossos clientes </strong>dizem?</h2>
+        <div>
+            <div class="comentarios">
+
+            </div>
+            <div class="comentarios">
+
+            </div>
+        </div>
+    </section>
+    <!-- fim da quinta seção ♡-->
+    <div id="frase">
+        <h1>Flores são poemas visíveis da natureza.</h1>
+    </div>
+
+    <footer id="footer">
+        <p>© 2024 Flores Delicadas. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,197 @@
+:root {
+    --background: #FFF7F1;
+    --branco-levinho: #ffffffb9;
+    --cor-comentarios: #653E39;
+    --cor-paragrafos: #834E47;
+    --cor-botoes: #EEAF96;
+    --cor-titulos: #C27354;
+    --bege-elementos: #FFEFE4;
+    --cor-nav: #9D5A40;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+#menuzinho {
+    display: none;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 730px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: 'Cormorant Garamond';
+        margin: auto;
+        background-color: var(--background);
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--cor-nav);
+    }
+
+    #inicio {
+        font-size: 1.2em;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 400px;
+        background-image: url(assets/inicio-bg.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    #inicio-div {
+        padding: 10px;
+        width: 242px;
+        height: 110px;
+        background-color: var(--branco-levinho);
+        margin-top: 153px;
+        margin-left: 200px;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        color: var(--cor-titulos);
+    }
+
+    sub {
+        color: var(--cor-paragrafos);
+    }
+
+    #primeiro-botao {
+        color: white;
+        width: 155px;
+        height: 30px;
+        background-color: var(--cor-botoes);
+        border: none;
+        border-radius: 20px;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.425);
+        transition: 0.3s ease;
+        margin-left: 253px;
+        margin-top: -15px;
+    }
+
+    #primeiro-botao:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+    #nav-bar {
+        display: none;
+    }
+
+    #menuzinho button {
+        background-color: transparent;
+        border: none;
+    }
+
+    #beleza {
+
+        margin-top: 90px;
+        text-align: center;
+    }
+
+    h2 {
+        padding-bottom: 24px;
+        color: var(--cor-titulos);
+    }
+
+    #beleza p {
+        color: var(--cor-paragrafos);
+        padding-bottom: 24px;
+    }
+
+    .fotos-menores {
+        width: 300px;
+    }
+
+    .fotos-maiores {
+        width: 460px;
+    }
+
+    #beleza img {
+        border-radius: 12px;
+    }
+
+    .fotos-maiores,
+    .fotos-menores {
+        border: 4px solid var(--bege-elementos);
+    }
+
+    .fotos-menores {
+        position: relative;
+        z-index: 1;
+        margin-top: -15px;
+    }
+
+    .fotos-maiores {
+        z-index: -1;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* seçao 3 */
+    #florzinhas {
+        display: inline-flex;
+        gap: 275px;
+
+    }
+
+    #sec3 {
+        padding: 12px;
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    #sec3 ul {
+        list-style: inside;
+        color: var(--cor-paragrafos);
+    }
+
+    /* contato */
+    #contato {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 46vh;
+        background-color: var(--bege-elementos);
+        border-radius: 13px;
+        box-shadow: 12px 12px 29px rgb(201, 201, 201);
+        margin-top: 100px;
+        padding: 40px;
+        text-align: center;
+    }
+
+    #contato input {
+        margin: 17px 5px;
+        padding: 4px;
+        border-radius: 12px;
+        border: none;
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+    #segundo-botao {
+        background-color: var(--cor-botoes);
+        width: 230px;
+        border: none; border-radius: 10px;
+        padding: 12px;
+        color: white;
+    }
+}

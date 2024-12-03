@@ -40,10 +40,11 @@
     }
 
     #inicio {
+        margin: auto;
         font-size: 1.2em;
         text-align: center;
         display: flex;
-        flex-direction: column;
+        flex-direction: column; 
         width: 100%;
         height: 400px;
         background-image: url(assets/inicio-bg.jpg);
@@ -57,10 +58,10 @@
         height: 110px;
         background-color: var(--branco-levinho);
         margin-top: 153px;
-        margin-left: 200px;
+        margin-left: 57px;
         border-radius: 16px;
         display: flex;
-        flex-direction: column;
+        flex-direction: column; justify-content: center; align-items: center;
     }
 
     h1 {
@@ -80,8 +81,8 @@
         border-radius: 20px;
         box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.425);
         transition: 0.3s ease;
-        margin-left: 253px;
-        margin-top: -15px;
+        margin-left: 108px;
+        margin-top: -10px;
     }
 
     #primeiro-botao:hover {
@@ -115,11 +116,11 @@
     }
 
     .fotos-menores {
-        width: 300px;
+        width: 200px;
     }
 
     .fotos-maiores {
-        width: 460px;
+        width: 360px;
     }
 
     #beleza img {

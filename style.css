@@ -39,14 +39,27 @@
         color: var(--cor-nav);
     }
 
+    #menuzinho {
+        z-index: 1;
+        background-color: var(--branco-levinho);
+        display: block;
+        position: relative;
+        text-align: right;
+        margin: 0;
+        padding: 7px 15px;
+    }
+
     #inicio {
+        top: 0;
+        z-index: 0;
+        position: absolute;
         margin: auto;
         font-size: 1.2em;
         text-align: center;
         display: flex;
-        flex-direction: column; 
+        flex-direction: column;
         width: 100%;
-        height: 400px;
+        height: 490px;
         background-image: url(assets/inicio-bg.jpg);
         background-position: center;
         background-size: cover;
@@ -57,11 +70,13 @@
         width: 242px;
         height: 110px;
         background-color: var(--branco-levinho);
-        margin-top: 153px;
-        margin-left: 57px;
+        margin-top: 200px;
+        margin-left: 140px;
         border-radius: 16px;
         display: flex;
-        flex-direction: column; justify-content: center; align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     h1 {
@@ -81,7 +96,7 @@
         border-radius: 20px;
         box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.425);
         transition: 0.3s ease;
-        margin-left: 108px;
+        margin-left: 189px;
         margin-top: -10px;
     }
 
@@ -101,7 +116,7 @@
 
     #beleza {
 
-        margin-top: 90px;
+        margin-top: 478px;
         text-align: center;
     }
 
@@ -158,28 +173,38 @@
     }
 
     #sec3 ul {
+        font-size: 18px;
         list-style: inside;
         color: var(--cor-paragrafos);
     }
 
     /* contato */
+
+    .contatodiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
     #contato {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        width: 46vh;
+        width: 300px;
+        height: 181px;
         background-color: var(--bege-elementos);
         border-radius: 13px;
-        box-shadow: 12px 12px 29px rgb(201, 201, 201);
+        box-shadow: 3px 2px 10px rgb(206, 206, 206);
         margin-top: 100px;
         padding: 40px;
         text-align: center;
     }
 
     #contato input {
-        margin: 17px 5px;
-        padding: 4px;
+        margin: 15px 8px;
+        padding: 9px;
         border-radius: 12px;
         border: none;
     }
@@ -191,7 +216,8 @@
     #segundo-botao {
         background-color: var(--cor-botoes);
         width: 230px;
-        border: none; border-radius: 10px;
+        border: none;
+        border-radius: 10px;
         padding: 12px;
         color: white;
     }

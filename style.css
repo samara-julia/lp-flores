@@ -21,6 +21,10 @@
     display: none;
 }
 
+.menu-mobile.open {
+    display: block;
+}
+
 @media screen and (max-width: 730px) {
 
     * {
@@ -40,14 +44,58 @@
     }
 
     #menuzinho {
-        z-index: 1;
+        z-index: 999;
         background-color: var(--branco-levinho);
         display: block;
         position: relative;
         text-align: right;
         margin: 0;
         padding: 7px 15px;
+
     }
+
+    .icon {
+        transition: 0.2s ease;
+    }
+    .icon:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+    .menu-mobile {
+        transform: translateY(20px);
+        opacity: 0;
+        visibility: hidden;
+        transition: transform 0.3s ease, opacity 0.3s ease, visibility 0s 0.3s
+    }
+    .menu-mobile.open {
+        color: var(--cor-nav);
+        z-index: 1;
+        background-color: var(--branco-levinho);
+        display: block;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        top: 40px;
+        padding: 10px;
+        margin: 12px;
+        border-radius: 20px;
+        visibility: visible; /* Permite interação com o menu */
+        opacity: 1; /* Torna o menu visível */
+        transform: translateY(0); /* Menu desce para sua posição normal */
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .menu-mobile ul {
+        list-style: none;
+        padding: 12px;
+    }
+
+    .menu-mobile ul li {
+        padding: 5px;
+    }
+
 
     #inicio {
         top: 0;
@@ -71,7 +119,7 @@
         height: 110px;
         background-color: var(--branco-levinho);
         margin-top: 200px;
-        margin-left: 135px;
+        margin-left: 132px;
         border-radius: 16px;
         display: flex;
         flex-direction: column;
@@ -96,7 +144,7 @@
         border-radius: 20px;
         box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.425);
         transition: 0.3s ease;
-        margin-left: 185px;
+        margin-left: 182px;
         margin-top: -10px;
     }
 
@@ -196,7 +244,7 @@
         height: 181px;
         background-color: var(--bege-elementos);
         border-radius: 13px;
-        box-shadow: 3px 2px 10px rgb(206, 206, 206);
+        box-shadow: 0px 5px 3px rgba(117, 117, 117, 0.555);
         margin-top: 100px;
         padding: 40px;
         text-align: center;
@@ -220,6 +268,12 @@
         border-radius: 10px;
         padding: 12px;
         color: white;
+        transition: 0.3s ease;
+    }
+
+    #segundo-botao:hover {
+        transform: scale(1.1);
+        cursor: pointer;
     }
 
     /* comentarios */
@@ -230,9 +284,10 @@
         margin-top: 100px;
         padding: 0;
     }
+
     #clientes {
+        height: 680px;
         background-color: var(--bege-elementos);
-        margin-top: 2000px;
         margin: auto;
         text-align: center;
         display: flex;
@@ -243,14 +298,33 @@
 
     .comentarios {
         background-color: var(--background);
-        
         width: 260px;
         height: auto;
-        margin: 12px;
+        margin: 37px;
+        padding: 18px;
+        box-shadow: 0px 5px 3px rgba(117, 117, 117, 0.555);
     }
+
+    .comentarios div {
+        padding: 13px;
+    }
+
+    #comentario-esquerda {
+        border-radius: 0px 25px 25px;
+    }
+
+    #comentario-direita {
+        border-radius: 25px 0px 25px 25px;
+    }
+
+    #comentario-esquerda2 {
+        border-radius: 0px 25px 25px;
+    }
+
     .perfis {
         vertical-align: middle;
-        width: 40px; height: 40px;
+        width: 40px;
+        height: 40px;
         border-radius: 30px;
         border: 1px solid var(--bege-elementos);
     }
@@ -258,9 +332,29 @@
     .nomes {
         padding: 5px;
     }
+
     .review {
-        background: white; margin: 10px; padding: 5px;
+        background: white;
+        margin: 10px;
+        padding: 5px;
         border-radius: 10px;
     }
 
+    svg {
+        display: block;
+    }
+
+    /* frase */
+
+    #frase {
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 60px;
+    }
+
+    /* footer */
+    footer {
+        background: var(--bege-elementos);
+        text-align: center;
+    }
 }

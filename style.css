@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 :root {
     --background: #FFF7F1;
     --branco-levinho: #ffffffb9;
@@ -29,6 +31,7 @@ body {
     background-color: var(--background);
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     text-align: center;
     margin: auto;
     padding: 0;
@@ -39,11 +42,13 @@ header {
     background-color: var(--branco-levinho);
     margin: 0;
     padding: 0;
-    z-index: 1;
+    z-index: 11;
+    border-radius: 0px 0px 29px 29px;
+    font-family: 'Cormorant Garamond';
 }
 
 #nav-bar ul {
-    font-size: 17px;
+    font-size: 20px;
     list-style: none;
     display: flex;
     justify-content: right;
@@ -53,7 +58,7 @@ header {
 }
 
 #nav-bar ul li {
-    padding: 17px;
+    padding: 15px 35px;
     color: var(--cor-nav);
 }
 
@@ -66,34 +71,45 @@ a:visited {
 }
 
 #imagem-inicial {
-    z-index: 0;
+    top: 0; left: 0;
+    z-index: -1;
     position: absolute;
-    width: 100%;
+    width: 1576px;
 }
 
 #inicio {
+    width: 420px;
+    margin-top: 202px; 
+    margin-left: 850px;
     text-align: center;
     z-index: 11;
     display: flex;
     flex-direction: column;
     justify-content: center; align-items: center;
     padding: 0;
-    border: 1px solid red;
 }
 
 #inicio-div {
+    height: 190px;
     border-radius: 18px;
     font-size: 20px;
-    width: 340px;
+    width: 400px;
     margin: 0;
     padding: 12px;
     position: relative;
     background-color: var(--branco-levinho);
+    
 }
-
+#inicio-div h1 {
+    color: var(--cor-titulos);
+    font-size: 37px;
+}
+#inicio-div sub {
+    color: var(--cor-paragrafos);
+}
 #primeiro-botao {
     position: relative;
-    top: -10px;
+    top: -15px;
     background: #000;
     width: 150px; height: 40px;
     background-color: var(--cor-botoes);
@@ -107,8 +123,84 @@ a:visited {
     cursor: pointer;
 }
 
+
+
+#beleza {
+    margin-top: 600px;
+}
+#beleza h2 {
+    color: var(--cor-titulos);
+    font-size: 30px;
+}
+
+.fotos-maiores  {
+    padding: 0;
+    margin: 0;
+    width: 600px;
+    border: 3px solid var(--bege-elementos);
+    border-radius: 12px;
+}
+.fotos-menores {
+    position: relative;
+    top: -11px;
+    width: 300px;
+    border: 3px solid var(--bege-elementos);
+    border-radius: 12px;
+}
+.perfis {
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    border: 2px solid var(--bege-elementos);
+}
+.comentarios {
+    border-radius: 20px;
+    width: 400px; height: 180px;
+    background-color: var(--background);
+    margin: 40px; padding-top: 30px;
+}
+.review {
+    text-align: center;
+    margin: auto;
+    width: 300px;
+    background-color: white;
+    padding: 12px;
+}
+
+.fotinhas {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+    #florzinhas {
+        display: inline-flex;
+        gap: 275px;
+
+    }
+
+    #clientes {
+        width: 100%;
+        height: 680px;
+        background-color: var(--bege-elementos);
+        margin: auto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    svg {
+        display: block;
+    }
+
+    p {
+        color: var(--cor-paragrafos);
+        font-weight: 100;
+    }
 /* media query */
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 768px) {
 
     * {
         margin: 0;
@@ -116,7 +208,6 @@ a:visited {
     }
 
     body {
-        font-family: 'Cormorant Garamond';
         margin: auto;
         background-color: var(--background);
     }
@@ -132,6 +223,7 @@ a:visited {
     #menuzinho {
         z-index: 999;
         background-color: var(--branco-levinho);
+        border-radius: 0px 0px 20px 20px;
         display: block;
         position: relative;
         text-align: right;
@@ -149,13 +241,9 @@ a:visited {
         cursor: pointer;
     }
 
-    .menu-mobile {
-        transform: translateY(20px);
-        opacity: 0;
-        visibility: hidden;
-        transition: transform 0.3s ease, opacity 0.3s ease, visibility 0s 0.3s
+    header {
+        background-color: transparent;
     }
-
     .menu-mobile.open {
         color: var(--cor-nav);
         z-index: 1;
@@ -170,12 +258,7 @@ a:visited {
         margin: 12px;
         border-radius: 20px;
         visibility: visible;
-        /* Permite interação com o menu */
         opacity: 1;
-        /* Torna o menu visível */
-        transform: translateY(0);
-        /* Menu desce para sua posição normal */
-        transition: transform 0.3s ease, opacity 0.3s ease;
     }
 
     .menu-mobile ul {
@@ -207,7 +290,7 @@ a:visited {
     #inicio-div {
         padding: 10px;
         width: 242px;
-        height: 140px;
+        height: 148px;
         background-color: var(--branco-levinho);
         margin-top: 40px;
         margin-left: 130px;
@@ -220,10 +303,6 @@ a:visited {
 
     h1 {
         color: var(--cor-titulos);
-    }
-
-    sub {
-        color: var(--cor-paragrafos);
     }
 
     #primeiro-botao {
@@ -264,7 +343,6 @@ a:visited {
     }
 
     #beleza p {
-        color: var(--cor-paragrafos);
         padding-bottom: 24px;
     }
 
@@ -298,11 +376,6 @@ a:visited {
     }
 
     /* seçao 3 */
-    #florzinhas {
-        display: inline-flex;
-        gap: 275px;
-
-    }
 
     #sec3 {
         padding: 12px;
@@ -376,6 +449,7 @@ a:visited {
     }
 
     #clientes {
+        width: 100%;
         height: 680px;
         background-color: var(--bege-elementos);
         margin: auto;
@@ -430,9 +504,6 @@ a:visited {
         border-radius: 10px;
     }
 
-    svg {
-        display: block;
-    }
 
     /* frase */
 
